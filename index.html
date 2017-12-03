@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Travel·India</title>
 </head>
@@ -118,7 +119,7 @@
   </section>
   
   <footer>
-    <li>Image Courtsey : <a href="https://unsplash.com"><strong>Unsplash</strong></a></li>
+    <li>Image Courtsey : <a href="https://unsplash.com" target="_blank"><strong>Unsplash</strong></a></li>
     <li class="title"><strong>Travel India Pvt. Ltd.</strong></li>
     <ul>
       <li>
@@ -135,12 +136,12 @@
   </footer>
   
 </body>
+
     <script type="text/javascript">
-      document.querySelector("a").addEventListener("click",
-        function(event){
-          event.stopPropagation();
-          event.preventDefault();   
-        });
+      $(document).on("click","a",function(event){
+        event.stopPropagation();
+        event.preventDefault();  
+      });
     </script>
 
 </html>
